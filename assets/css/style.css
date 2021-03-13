@@ -1,0 +1,315 @@
+/* Universal Selectors */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #e08740;
+    --secondary: #be5a48;
+    --tertiary: #d44e29;
+    --dark: #1b4050;
+    --light: #397191;
+}
+
+html, body {
+	margin: 0;
+    padding: 0;
+	height:100%;
+	width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    background-color: var(--primary);
+    line-height: 1.2;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 5vw;
+    text-align: center;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.0em;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 1px 25px 0 var(--secondary);
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: var(--dark);
+    margin-right: 20px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+
+/* Nav Stlying */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary);
+}
+
+/* Nav Stroke Styling */
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--secondary);
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+/* Hero Parallax */
+.hero-parallax {
+    height: 70vh;
+    width: 100%;
+    background-image: url('../images/charizard-hero.png');
+    background-position: center;
+    background-size: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-attachment: fixed;
+}
+
+/* Main */
+main {
+    width: 100%;
+    display: inline-block;
+}
+
+/* Sections */
+.page-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary);
+}
+
+.page-section {
+    padding: 2em 10% 4em;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+}
+
+.page-section > h2 {
+    padding-right: 25px;
+    line-height: 1.0;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.page-section p {
+    padding-left: 25px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 3px solid var(--dark);
+    background-color: var(--light);
+    color: #ffffff;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 8px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 130%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+.flex-item:first-child {
+    min-height: 350px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flex-item div {
+    background-color: var(--dark);
+    padding: 0 15px 15px 15px;
+    line-height: .5em;
+}
+
+.flex-item h3 {
+    font-size: 1.3em;
+}
+
+/* Contact Information */
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact address a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark);
+    margin-right: 20px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+  
+.contact address a:hover {
+    color: var(--secondary);
+}
+
+/* Portfolio Images */
+.dragon-tail {
+    background-image: url("../images/dragon-tail.jpg");
+}
+
+.overheat {
+    background-image: url("../images/overheat.jpg");
+}
+  
+.seismic-toss {
+    background-image: url("../images/seismic-toss.jpg");
+}
+  
+.slash {
+    background-image: url("../images/slash.jpg");
+}
+  
+.dragon-rage {
+    background-image: url("../images/dragon-rage.jpg");
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    clear: both;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background: var(--dark);
+    color: #fff;
+}
+
+footer h3 {
+    font-size: 1.3em;
+}
+
+/* Responsive Elements */
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      display: inline-block;
+      font-size: 5vw;
+      text-align: center;
+      width: 100%;
+      padding: 5px;
+      font-size: 8vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+
+    nav {
+      width: 80%;
+    }
+
+    .page-section > div {
+      flex: 1 0 auto;
+    }
+  
+    .page-section > h2 {
+      padding-bottom: 10px;
+      text-align: center;
+      font-size: 2em;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    nav {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      font-size: 1.6em;
+      flex-direction: column;
+      align-items: center;
+    }
+}

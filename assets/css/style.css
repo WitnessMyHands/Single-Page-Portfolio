@@ -4,21 +4,19 @@
 }
 
 :root {
-    --primary: #e08740;
-    --secondary: #be5a48;
-    --tertiary: #d44e29;
-    --dark: #1b4050;
-    --light: #397191;
+    --primary: #147b9b;
+    --secondary: #5838a1;
+    --dark: ##000;
+    --light: #fff;
 }
 
 html, body {
 	margin: 0;
     padding: 0;
-	height:100%;
+	min-height:100vh;
 	width: 100%;
     font-family: 'Lato', sans-serif;
-    color: var(--secondary);
-    background-color: var(--primary);
+    background: linear-gradient(#a4eaff,#147b9b,#5838a1);
     line-height: 1.2;
     scroll-behavior: smooth;
 }
@@ -26,9 +24,10 @@ html, body {
 /* Header */
 header {
     display: flex;
+    padding: 15px;
     justify-content: center;
     font-family: 'Berkshire Swash', cursive;
-    color: #ffffff;
+    color: var(--primary);
 }
 
 header h1 {
@@ -49,7 +48,6 @@ nav {
     margin: 0 auto;
     padding: 15px;
     background: #fff;
-    box-shadow: 0 1px 25px 0 var(--secondary);
     border-radius: 5px;
 }
 
@@ -107,11 +105,11 @@ nav.stroke ul li a:hover:after {
 
 /* Hero Parallax */
 .hero-parallax {
+    margin-top: 50px;
     height: 70vh;
-    width: 100%;
-    background-image: url('../images/charizard-hero.png');
-    background-position: center;
-    background-size: 950px;
+    width: 100vw;
+    background-image: url('../images/hero.jpg');
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -128,7 +126,6 @@ main {
 .page-wrapper {
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--secondary);
 }
 
 .page-section {
@@ -156,8 +153,7 @@ main {
 }
 
 .flex-item {
-    border: 3px solid var(--dark);
-    background-color: var(--light);
+    border: 3px solid #000;
     color: #ffffff;
     min-height: 150px;
     max-height: 150px;
@@ -183,7 +179,7 @@ main {
 }
 
 .flex-item div {
-    background-color: var(--dark);
+    background-color: #000;
     padding: 0 15px 15px 15px;
     line-height: .5em;
 }
@@ -215,39 +211,44 @@ main {
 }
 
 /* Portfolio Images */
-.dragon-tail {
-    background-image: url("../images/dragon-tail.jpg");
+.paws {
+    background-image: url("../images/paws.jpg");
 }
 
-.overheat {
-    background-image: url("../images/overheat.jpg");
+.code {
+    background-image: url("../images/code.jpg");
 }
   
-.seismic-toss {
-    background-image: url("../images/seismic-toss.jpg");
-}
-  
-.slash {
-    background-image: url("../images/slash.jpg");
-}
-  
-.dragon-rage {
-    background-image: url("../images/dragon-rage.jpg");
+.pass {
+    background-image: url("../images/pass.jpg");
 }
 
 /* Footer */
 
 footer {
     padding: 20px;
-    clear: both;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    background: var(--dark);
-    color: #fff;
+    height: 70vh;
+    width: 100%;
+    background-image: url("../images/footer.png");
+    background-position: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: bottom;
 }
 
 footer h3 {
     font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: .9em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #fff;
 }
 
 /* Responsive Elements */
@@ -284,7 +285,16 @@ footer h3 {
       text-align: center;
       font-size: 2em;
     }
-}
+
+    .hero-parallax {
+        margin-top: 50px;
+        height: 40vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        background-attachment: fixed;
+    }
+}   
   
 @media screen and (max-width: 768px) {
     nav {

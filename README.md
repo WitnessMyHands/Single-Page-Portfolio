@@ -19,6 +19,3 @@ Set-up like a gallery, the work area of the site highlights historical features 
 
 ## Contact-Me
 The contact information located at the very bottom consists of 4 clickable links to contact via phone communications, email, GitHub and Twitter.
-
-## Footer
-Page ownership information.

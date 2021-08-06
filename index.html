@@ -3,93 +3,122 @@
 
 <head>
   <meta charset="UTF-8" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <title>WitnessMyHands // Est. 2021</title>
 </head>
 
 <body>
   <header>
-    <h1>Carlos Barrientos</h1>
+    <a href='#' class='logo'>Carlos Barrientos</a>
+
+    <ul>
+      <li><a href='#'>Home</a></li>
+      <li><a href='#about'>About</a></li>
+      <li><a href='#work'>Work</a></li>
+      <li><a href='#contact'>Contact</a></li>
+    </ul>
   </header>
 
-  <nav class="stroke">
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <section>
+    <img src='./assets/images/clouds-bg.png' id='clouds-bg'>
+    <img src='./assets/images/clouds-left.png' id='clouds-left'>
+    <img src='./assets/images/clouds-right.png' id='clouds-right'>
+      <h2 id='cta'>Portfolio 3.0</h2>
+      <a href='#about' id='btn'>About Me</a>
+    <img src='./assets/images/clouds-front.png' id='clouds-front'>
+    <img src='./assets/images/clouds-plane.png' id='clouds-plane'>
+    <img src='./assets/images/plane.png' id='plane'>
+  </section>
 
-  <div class="hero-parallax">
+  <div class='sec' id='about'>
+    <h2>About</h2>
+    <p>Growing up as the youngest single child in the family, I was always
+      challenged by my two older cousins.
+      <br /><br />
+      Despite the relative closeness, I was entertained by the stark differences
+      displayed in the way they each carried themeselves both socially and academically.
+      <br /><br />
+      The whole ideal child versus black sheep scenario, with me in the middle looking
+      up to both for equal guidance. Yet here I was, wondering what my next adventure 
+      would be. Consequently, this led to an act first then learn from it later from 
+      both scenarios, which is why you're even reading this rather personal story.
+      <br /><br />
+      The voyage of early childhood experiences that molded me to jump before the reality
+      of that might not be a good idea seeped in (though I never broke a bone) defines me.
+      <br /><br />
+      This is part of the reason why I am here. To keep learning because liberation 
+      to me is feeling prepared, even though the house is on fire.
+    </p>
+
+    <img src='./assets/images/clouds-invert.png' id='clouds-invert'>
   </div>
 
-  <main>
-    <section class="page-wrapper">
-      <div class="page-section" id="about">
-      <h2>A Little About Me</h2>
-        <div>
-        <p>I'll keep this brief.</p>
-        <p>Born and raised in the suburbs of Austin, Texas. After realizing that the medical thing wasn't for me, I graduated with a B.F.A. in Communication Design from Texas State University.</p>          
-        <p>As a graphic designer, I've seen and done a lot in todays age of marketing from National publications to UX/UI website designs.</p>        
-        <p>Now I'm here to grasp that left part of my brain a little more to not only design stuff like websites, but to write them as well.</p>   
-        <p>There is a 100% chance the next time you see this page, it will not look like this.</p>
-        <p>Learning is nice.</p>
+  <main id='work'>
+    <div class='container-fluid'>
+      <h2>Work</h2>
+      <p>Below are images of completed projects from the Rice Coding Bootcamp.<br /><br />
+        Each image will take you to the corresponding website, repository or YouTube 
+        video link associated with the project requirements.<br /><br />
+      <div class='row mt-4'>
+        <div class='item col-sm-6 col-md-4 mb-3'>
+          <a href='https://bestpaws.herokuapp.com/'>
+          <img src='./assets/images/paws-2.png' width='100%' height='100%' alt='Revised Group Project 1 using the MVC Paradigm'>
+          </a>
+        </div>
+        <div class='item col-sm-6 col-md-4 mb-3'>
+          <a href='https://witnessmyhands.github.io/Best-Paws-Site/'>
+          <img src='./assets/images/paws.jpg' width='100%' height='100%' alt='First Coding Bootcamp Group Project using APIs and JS'>
+          </a>
+        </div>
+        <div class='item col-sm-6 col-md-4 mb-3'>
+          <a href='https://www.youtube.com/watch?v=mQhW5DRwPhU'>
+          <img src='./assets/images/team-pro.png' width='100%' height='100%' alt='Team profile generator utilizes Node.js'>
+          </a>
+        </div>
+        <div class='item col-sm-6 col-md-4 mb-3'>
+          <a href='https://www.youtube.com/watch?v=iy7bFBIJqf8'>
+          <img src='./assets/images/ecomm.png' width='100%' height='100%' alt='Backend web development for an Ecommerce website using ORM'>
+          </a>
+        </div>
+        <div class='item col-sm-6 col-md-4 mb-3'>
+          <a href='https://github.com/WitnessMyHands/Code-Quiz'>
+          <img src='./assets/images/code.jpg' width='100%' height='100%' alt='The code quiz enables users to begin a short quiz developed using JS'>
+          </a>
+        </div>
+        <div class='item col-sm-6 col-md-4 mb-3'>
+          <a href='https://github.com/WitnessMyHands/Password-Generator'>
+          <img src='./assets/images/pass.jpg' width='100%' height='100%' alt='A generator application for making custom Alphanumeric Passwords'>
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="page-section" id="work">
-      <h2>Coding Bootcamp Projects</h2>
-      <div class="flex-container">
-  
-      <a href="https://witnessmyhands.github.io/Best-Paws-Site/" class="flex-item paws" alt="First Coding Bootcamp Group Project using APIs and JS">
-        <div>
-        <h3>Best Paws Website</h3>
-        <span>Coding Bootcamp Class First Group Project</span>
-        </div>
-      </a>
-
-      <a href="https://witnessmyhands.github.io/Code-Quiz/" class="flex-item code" alt="Code Quiz using JS">
-        <div>
-        <h3>Code Quiz</h3>
-        <span>Coding Bootcamp Class Assignment #4</span>
-        </div>
-      </a>  
-          
-      <a href="https://witnessmyhands.github.io/Password-Generator/" class="flex-item pass" alt="Password Generator">
-        <div>
-        <h3>Password Generator</h3>
-        <span>Coding Bootcamp Class Assignment #3</span>
-        </div>
-      </a>
-    </section>
-
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <div>
-        <address>
-        <a href="tel:+17137021183">Call</a>
-        <a href="mailto:cgbarr89@gmail.com">Email</a>
-        <a href="https://github.com/WitnessMyHands">GitHub</a>
-        <a href="https://twitter.com/">Twitter</a>
-        </address>
-       </div>
-    </section>
+    </div>
   </main>
+  
+  <div class='contact' id='contact'>
+    <ul>
+      <li><a href='tel:+17137021183'>Call</a></li>
+      <li><a href='mailto:cgbarr89@gmail.com'>Email</a></li>
+      <li><a href='https://github.com/WitnessMyHands'>GitHub</a></li>
+      <li><a href='https://www.linkedin.com/in/carlos-barrientos-0565b948/'>LinkedIn</a></li>
+      <li><a href="./assets/ Resume.pdf" download>Download Resume</a></li>
+    </ul>
+  </div>
     
-  <footer class="footer">
-    <h3>Made by Carlos Barrientos</h3>
+  <footer class='footer'>
+    <h3>Created by Carlos Barrientos</h3>
     <p>&copy; 2021 Witness My Hands</p>
   </footer>
+
+  <script src='./assets/js/script.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js'></script>
 </body>
 
 </html>
